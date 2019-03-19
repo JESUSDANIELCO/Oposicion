@@ -25,9 +25,6 @@ public class HilosEjercicio {
 			
 	}			
 }
-
-
-
 class Trabajador implements Runnable {    //-- 1 CREAR CLASE
  	
 	@Override
@@ -40,6 +37,7 @@ class Trabajador implements Runnable {    //-- 1 CREAR CLASE
 				//----- METODO PARA SABER QUE HILO ESTA CORRIENDO-------
 				System.out.println("EL HILO QUE ESTA CORRIENDO ES :" + Thread.currentThread().getName());	//-- referencia del hilo en ejecucion actual y NOMBRE DEL  HILO
 				System.out.println("EL TRABAJADOR LLEVA EL MENSAJE NUMERO :  " + i);
+				System.out.println("Es un cambio de ejemplo");
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
